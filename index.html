@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض أعمالي | Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        .skill-card, .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .skill-card:hover, .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- القائمة العلوية Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">موقعي الشخصي</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-end">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">عني</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">المهارات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">الأعمال</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">تواصل معي</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم التعريف Hero Section -->
+    <section id="hero" class="hero-section text-center">
+        <div class="container">
+            <!-- [اسماء حسني عبدالجليل محمد ] -->
+            <h1 class="display-5 fw-bold mb-3">مرحباً، أنا [اسماء حسني عبدالجليل محمد]</h1>
+            <p class="lead mb-4">مصممة واجهات ومطورة ويب (UI/UX & Front-End Developer)</p>
+            <a href="#projects" class="btn btn-light btn-lg text-primary fw-bold fs-6">استعرض أعمالي</a>
+        </div>
+    </section>
+
+    <!-- قسم نبذة عني About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">نبذة عني</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p class="fs-6 text-muted">
+                        أنا طالبة شغوفة بتطوير البرمجيات وتصميم واجهات وتجربة المستخدم (UI/UX Design). أهتم بتحويل الأفكار إلى تصاميم جذابة وسهولة الاستخدام، مع التركيز على بناء مواقع متجاوبة تقدم أفضل تجربة للمستخدم.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المهارات Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">المهارات التقنية</h2>
+            <div class="row g-3 text-center justify-content-center">
+                <div class="col-6 col-md-3">
+                    <div class="card skill-card p-3 border-0 shadow-sm">
+                        <i class="fas fa-pencil-ruler fa-3x text-warning mb-2"></i>
+                        <h6>UI/UX Design</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card skill-card p-3 border-0 shadow-sm">
+                        <i class="fab fa-html5 fa-3x text-danger mb-2"></i>
+                        <h6>HTML5</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card skill-card p-3 border-0 shadow-sm">
+                        <i class="fab fa-css3-alt fa-3x text-primary mb-2"></i>
+                        <h6>CSS3</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card skill-card p-3 border-0 shadow-sm">
+                        <i class="fab fa-bootstrap fa-3x mb-2" style="color: #6f42c1;"></i>
+                        <h6>Bootstrap 5</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المشاريع Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">سابقة الأعمال</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card project-card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">تصميم نظام إدارة الصيدليات</h5>
+                            <p class="card-text text-muted small">تخطيط وتصميم الواجهات البرمجية (UI) وهيكلية وتجربة المستخدم (UX) الخاصة بنظام الصيدليات.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <span class="badge bg-warning text-dark">UI/UX</span>
+                            <span class="badge bg-primary">HTML</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card project-card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">صفحة هبوط متجاوبة</h5>
+                            <p class="card-text text-muted small">تصميم وتطوير صفحة تعريفية متجاوبة تعمل على جميع الشاشات باستخدام Bootstrap.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <span class="badge bg-primary">Bootstrap 5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card project-card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">السيرة الذاتية (Portfolio)</h5>
+                            <p class="card-text text-muted small">موقع شخصي احترافي لعرض المهارات والنبذة التعريفية وسابقة الأعمال.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <span class="badge bg-primary">HTML5</span>
+                            <span class="badge bg-secondary">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold">تواصل معي</h2>
+            <p class="text-muted mb-4">يسعدني التواصل معك عبر الوسائل التالية:</p>
+            <div class="d-flex justify-content-center gap-2">
+                <a href="https://github.com" target="_blank" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i> GitHub</a>
+                <a href="asmaahosny552005@gmail.com‬‏" class="btn btn-outline-danger btn-sm"><i class="fas fa-envelope"></i> البريد الإلكتروني</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <!-- [اسماء حسني عبدالجليل محمد] -->
+        <p class="mb-0 small">&copy; 2026 جميع الحقوق محفوظة | تم التطوير بواسطة [اسماء حسني عبدالجليل محمد]</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
